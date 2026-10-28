@@ -497,7 +497,7 @@ const CHECKLIST = [
     backB.hidden=st===0;
     nextB.hidden=st===STEPS-1;
     nextB.textContent=st===0?"let's go":st===SECTIONS.length?"almost done":st===SECTIONS.length+1?"finish":"next section";
-    if(st===STEPS-1){const wa=document.getElementById("wa");wa.href="https://wa.me/?text="+encodeURIComponent(summary());
+    if(st===STEPS-1){const wa=document.getElementById("wa");wa.href="https://wa.me/201001137429?text="+encodeURIComponent(summary());
       if(primed){const bb=document.getElementById("bigbell");bb.classList.add("ring");}}
     progress();
     if(focusTop) window.scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});
